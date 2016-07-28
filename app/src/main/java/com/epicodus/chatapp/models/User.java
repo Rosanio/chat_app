@@ -1,7 +1,21 @@
 package com.epicodus.chatapp.models;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
- * Created by Matt on 7/28/2016.
+ * Model that stores User info, like usernames and passwords
  */
 public class User {
+
+    @Getter @Setter private String userName;
+
+    @Getter @Setter private String useremail;
+
+    public User() {}
+
+    public User(String userName, String useremail) {
+        this.userName = userName;
+        this.useremail = useremail;
+    }
 }
